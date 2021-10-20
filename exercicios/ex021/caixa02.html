@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgray;
+            margin: 0px;
+        }
+        header {
+            background-color: #fff;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav {
+            background-color: rgb(126, 119, 119);
+            padding: 3px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.363);
+        }
+        article {
+            background-color: darkgray;
+            padding: 5px;
+        }
+        article > aside {
+            background-color: rgb(77, 77, 77);
+        }
+        main {
+            background-color: #fff;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.342);
+    
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px ;
+        }
+        nav > a {
+            color: #fff;
+            font-weight: bold;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+        nav:hover > a {
+            text-decoration: underline;
+        }
+        footer > p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esporte, Política e tecnologia.</p>
+            
+        </section>
+
+        <section id="noticias"> 
+             <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nostrum dolor odit ipsam obcaecati ad molestiae distinctio perspiciatis sit repellendus nesciunt aspernatur corporis, non suscipit ducimus dolorum maiores, iste reprehenderit.</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Luquinhas</p>
+    </footer>
+    
+</body>
+</html>

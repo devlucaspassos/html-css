@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 3</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2em;
+            background: lightgray;
+        }
+        div {
+            background: rgb(0, 0, 0);
+            width: 360px;
+            height: 450px;
+            margin: auto;
+        }
+        img {
+            display: none;
+        }
+        div:hover > img {
+            display: block;
+            
+        }
+        h2 {
+            text-align: center;
+        }
+        h2::before {
+            content: '⬇️';
+        }
+        h2::after {
+            content: '⬇️';
+        }
+        h2:hover {
+            color: red;
+            text-decoration: underline;
+        }
+        h1, p {
+            text-align: center;
+        }
+        a:visited {
+            color: darkred;
+        }
+        a:active {
+            color: white;
+        }
+        a {
+            color: red;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        a::before {
+            content: '→';
+            font-weight: lighter;
+            color: black;
+        }
+        a::after {
+            content: '[link]';
+            font-weight: lighter;
+            color: grey;
+
+        }
+        h1 {
+            font: italic lighter 3em Times New Roman Times Serif;
+        }
+    
+    </style>
+</head>
+<body>
+    <h1>Exercício com Pseudo-classes e Pseudo-elementos</h1>
+    <p>
+        <a href="https://www.youtube.com" target="_blank" rel="external">Clique aqui</a> para ir para o Youtube
+    </p>
+    <p>
+        <a href="https://www.coca-cola.com.br" target="_blank" rel="external">Clique aqui</a> para ir para o site da Coca-Cola
+    </p>
+        <h2>PASSE O MOUSE AQUI!</h2>
+    <div>
+        <img src="https://static.wikia.nocookie.net/meme/images/d/d5/Swag_Cat.jpg/revision/latest/top-crop/width/360/height/450?cb=20200611194419" alt="staring-cat">
+    </div>
+    
+</body>
+</html>

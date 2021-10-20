@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'Love';
+    src: url(fonts/love-larry.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'darkness';
+    src: url(fonts/Wings_of_Darkness\ ttf.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'techno';
+    src: url(fonts/Techno\ ttf.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'commercial';
+    src: url(fonts/commersial-script\ ttf.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+/* Tipos de formatos 
+ - Opentype (otf)
+ - Truetype (ttf) 
+ - ambedded-opentype 
+ - truetype-aat (Apple Advanced Typography
+ - svg*/
+ body {
+     font-family: Arial, Helvetica, sans-serif;
+     background-image: linear-gradient(to right, #FFB5C2, #848FA5, #FFE9CE );
+ }
+ main {
+     width: 700px;
+     background-color: #fff;
+     margin: auto;
+     padding: 10px;
+     border-radius: 10px;
+     box-shadow: 5px 5px 15px #70798b50;
+ }
+ h1 {
+     font-family:'Love';
+     font-size: 3em;
+ }
+ h2 {
+     font-family: 'darkness';
+     font-size: 3em;
+ }
+ h3 {
+     font-family: 'techno';
+     font-size: 3em;
+ }
+ h4 {
+     font-family: 'commercial';
+     font-size: 3em;
+ }
+ h1, h2, h3, h4 {
+     text-align: center;
+     color: #5F0A87;
+ }
+ p {
+     text-align: justify;
+ }

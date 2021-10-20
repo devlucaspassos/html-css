@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício</title>
+    <style>
+        div {
+            background-color: lightgrey;
+            width: 400px;
+            height: 400px;
+            margin: 100px auto 100px auto;
+            border: 15px solid grey;
+            padding: 25px;
+            outline: 15px dashed rgb(85, 85, 85);
+        }
+        .pintolindo {
+            margin-top: 20px;
+            background-color: rgb(85, 221, 97);
+            border: 8px solid rgb(7, 121, 26);
+            font: italic bold 1em arial helvetica sans-serif;
+            padding: 5px 0px 5px 125px;
+            outline: 5px dashed rgb(20, 68, 20);
+        }
+        .pintopreto {
+            background-color: rgb(139, 33, 33);
+            color: #fff;
+            border: 8px solid rgb(70, 8, 8);
+            outline:5px dashed rgb(161, 5, 122);
+            padding: 5px 0px 5px 125px;
+            font: italic bold 1em arial helvetica sans-serif;
+        }
+    img {
+        width: 200px;
+        height: 200px;
+        margin-left: 100px;
+    }
+    div > img {
+        display: none;
+        
+    }
+    div:hover > img {
+        display: block;
+    }
+    .verpinto {
+        background-color: black;
+        color: #fff;
+        font: bold 1.5em arial helvetica sans-serif;
+    }
+    </style>
+</head>
+<body>
+    <div>
+        <p class="pintopreto">PINTO PRETO!</p>
+       <p class="pintolindo">PINTO LINDO!</p>
+       <p class="verpinto">CUIDADO, PINTO PRETO ABAIXO!</p>
+       <img src="https://http2.mlstatic.com/D_NQ_NP_645136-MLB27186902698_042018-O.jpg" alt="pinto-preto">
+    </div>
+</body>
+</html>

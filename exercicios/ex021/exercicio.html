@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício com Margin e Padding</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+        @font-face {
+            font-family: 'love';
+            src: url(fontes/love-larry.ttf);
+        }
+    div {
+        background-color: lightgray;
+        width: 800px;
+        height: 500px;
+        margin: auto;
+    }
+    img {
+        width: 800px;
+        height: 500px;
+    }
+    h1 {
+        text-align: center;
+        font: bold 3em arial helvetica sans-serif;
+    }
+    h2 {
+        font: bold 2em 'love';
+        color: red;
+        text-align: center;
+    }
+    h1::before {
+        content: '⬇️';
+    }
+    h1:after {
+        content: '⬇️';
+    }
+    div > img, h2 {
+        display: none;
+        
+    }
+    div:hover > img {
+        display: block;
+    }
+    div:hover > h2 {
+        display: block;
+    }
+    h2::before {
+        content: '🐱';
+    }
+    h2::after {
+        content: '🐱';
+    }
+</style>
+</head>
+<body>
+    <div>
+        <h1>PASSE O MOUSE AQUI!</h1>
+        <img src="https://i.ytimg.com/vi/Zr-qM5Vrd0g/maxresdefault.jpg" alt="staring-cat">
+        <h2>EU TE AMO!</h2>
+    </div>
+
+    
+</body>
+</html>

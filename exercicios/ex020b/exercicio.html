@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            text-decoration: none;
+            font-weight: bold;
+            color: red;
+        }
+        a:visited {
+        color: darkred;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .especial:hover {
+            color: white;
+            background: black;
+            text-decoration: none;
+        }
+        .especial::before {
+            content: "😀";
+        }
+        .especial::after {
+            content: "[link]";
+            font-weight: lighter;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste com links</h1>
+    <p>
+        Para acessar o Youtube,
+            <a href="https://youtube.com" target="_blank" rel="external">clique aqui</a>
+    </p>
+    <p>
+        Para acessar o Facebook, <a href="https://www.facebook.com" target="_blank" rel="external">clique aqui</a>
+    </p>
+    <p>
+        Para acessar o Instagram, <a class="especial" href="https://www.instagram.com" target="_blank" rel="external">clique aqui</a>
+    </p>
+    <p>
+        Para acessar o site da Perdigão, <a href="https://www.perdigao.com.br" target="_blank" rel="external">clique aqui</a>
+    </p>
+    
+</body>
+</html>
