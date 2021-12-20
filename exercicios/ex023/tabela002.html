@@ -17,6 +17,12 @@
             text-align: center;
             margin: auto;
         }
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 5px;
+            background-color: lightgray;
+        }
         td, th, table {
             border: 1px solid black;
             border-collapse: collapse;
@@ -25,10 +31,20 @@
             background-color: grey;
             color: #fff;
         }
-        .num {
+        .num, .total {
             text-align: right;
             padding: 3px;
         }
+        .total {
+            background-color: grey;
+            color: white;
+            font-weight: bold;
+        }
+        tbody > tr:nth-child(even) {
+            background-color: lightgrey;
+        }
+
+
     </style>
 </head>
 <body>
@@ -50,12 +66,15 @@
     -->
     
     <table>
+        <caption>
+            População das Unidades Federativas
+        </caption>
         <thead>
             <tr>
-                <th>
+                <th scope="col">
                     Unidade federativa
                 </th>
-                <th>
+                <th scope="col" style="width: 100px;">
                     População
                 </th>
             </tr>
@@ -279,11 +298,11 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>
+                <th scope="row" class="">
                     Total
                 </th>
-                <td>
-                    xxx
+                <td class="total">
+                    210.147.125
                 </td>
             </tr>
         </tfoot>
